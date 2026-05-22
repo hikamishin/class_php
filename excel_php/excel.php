@@ -23,7 +23,7 @@ $result=mysqli_query($link, $sql);
 echo "<table border='1'>";
 while( $row = mysqli_fetch_assoc($result) ){
     echo "<tr>";
-   echo "<td>".$row["name"]."</td><td>".$row["dept"]."</td><td>".$row["city"]."</td><td><a href='del.php?sNo=".$row['No']."'>刪除</a></td><td><a href='update.php?sNo=".$row['No']."'>更新</a></td>";
+   echo "<td>".$row["No."]."</td><td>".$row["cName"]."</td><td>".$row["eName"]."</td><td>".$row['No']."'>刪除</a></td><td><a href='update.php?sNo=".$row['No']."'>更新</a></td>";
     echo "</tr>";
 }
 echo "</table>";
